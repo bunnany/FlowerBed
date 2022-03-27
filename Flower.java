@@ -79,5 +79,11 @@ public class Flower
         UI.sleep(500);                  // wait
     }
     
-    
+    /**
+     * Erase a rectangle around the current obj
+     */
+    public void erase() {
+        final int BUFFER = 1;
+        UI.eraseRect(left, top, flowerSize+BUFFER, bottom+BUFFER);
+    }
 }
